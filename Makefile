@@ -1,3 +1,3 @@
 setup:
-    chmod +x gradlew
-    ./gradlew clean install
+	chmod +x gradlew
+	./gradlew clean install
