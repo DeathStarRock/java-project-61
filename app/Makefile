@@ -1,5 +1,14 @@
-run-dist:
-	build\install\app\bin\app.bat
+run:
+	./gradlew run --console=plain
 
-setup:
-	sh code/app/gradlew clean install
+run-dist:
+	./gradlew installDist
+	./build/install/app/bin/app
+
+.PHONY: build
+build:
+	./gradlew clean build
+
+.PHONY: check
+check:
+	./gradlew check
