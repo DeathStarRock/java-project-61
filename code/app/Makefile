@@ -1,5 +1,5 @@
 run-dist:
-	build\install\app\bin\app.bat
+	build/install/app/bin/app
 
 setup:
-	cd code/app && sh gradlew clean install
+	./gradlew clean install
