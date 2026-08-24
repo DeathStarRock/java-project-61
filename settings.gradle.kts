@@ -1,1 +1,4 @@
-rootProject.name = "java-project-61"`n`ninclude("code:app")`nproject(":code:app").projectDir = file("code/app")
+rootProject.name = "java-project-61"
+
+include("code:app")
+project(":code:app").projectDir = file("app")
