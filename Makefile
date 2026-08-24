@@ -1,9 +1,13 @@
 .PHONY: setup
 
 setup:
-	@echo "Running setup script..."
+	@echo "Checking repository content..."
+	@ls -la || true
 	@if [ ! -d "code/app" ]; then \
+		echo "Docker cache bug detected! Recreating code/app on the fly..."; \
 		mkdir -p code/app; \
-		mv * code/app/ 2>/dev/null || true; \
+		find . -maxdepth 1 ! -name '.' ! -name '..' ! -name 'code' -exec mv {} code/app/ \; 2>/dev/null || true; \
 	fi
-	cd code/app && ./gradlew clean install
+	@echo "Directory fixed. Current structure:"
+	@ls -la code/app || true
+	cd code/app && chmod +x gradlew && ./gradlew clean install
