@@ -40,3 +40,4 @@ public class ProgressionGame {
         return new Question(questionBuilder.toString(), String.valueOf(hiddenNumber));
     }
 }
+ 

@@ -27,3 +27,4 @@ public class GcdGame {
         return a;
     }
 }
+ 
