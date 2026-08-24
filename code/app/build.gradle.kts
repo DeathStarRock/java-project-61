@@ -57,3 +57,4 @@ fun <JavaExtension> leadingTabsToSpaces(i: Int) {
 }
 
 // Trigger docker layer invalidation 
+// Force Docker cache invalidation 2026
