@@ -13,3 +13,5 @@ Thumbs.db
 
 app.iml
 test
+/build/
+/.gradle/

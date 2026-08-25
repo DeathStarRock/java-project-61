@@ -1,5 +1,6 @@
 package hexlet.code.games;
 
+import hexlet.code.Engine;
 import hexlet.code.Question;
 import java.util.Random;
 
@@ -36,5 +37,8 @@ public class CalcGame {
                 throw new IllegalArgumentException("Unknown operator");
         }
     }
+
+    public static void start(String userName) {
+        Engine.run(CalcGame.getDescription(), CalcGame::generateQuestion, userName);
+    }
 }
- 

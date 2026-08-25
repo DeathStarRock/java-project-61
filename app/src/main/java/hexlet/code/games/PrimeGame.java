@@ -1,5 +1,6 @@
 package hexlet.code.games;
 
+import hexlet.code.Engine;
 import hexlet.code.Question;
 import java.util.Random;
 
@@ -28,5 +29,8 @@ public class PrimeGame {
         }
         return true;
     }
+
+    public static void start(String userName) {
+        Engine.run(PrimeGame.getDescription(), PrimeGame::generateQuestion, userName);
+    }
 }
- 

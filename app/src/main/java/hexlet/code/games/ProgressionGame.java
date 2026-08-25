@@ -1,5 +1,6 @@
 package hexlet.code.games;
 
+import hexlet.code.Engine;
 import hexlet.code.Question;
 import java.util.Random;
 
@@ -39,5 +40,8 @@ public class ProgressionGame {
 
         return new Question(questionBuilder.toString(), String.valueOf(hiddenNumber));
     }
+
+    public static void start(String userName) {
+        Engine.run(ProgressionGame.getDescription(), ProgressionGame::generateQuestion, userName);
+    }
 }
- 

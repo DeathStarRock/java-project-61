@@ -11,3 +11,8 @@ setup:
 	@echo "Directory fixed. Current structure:"
 	@ls -la code/app || true
 	cd code/app && chmod +x gradlew && ./gradlew clean install
+
+.PHONY: run-dist
+
+run-dist:
+	./build/install/app/bin/app

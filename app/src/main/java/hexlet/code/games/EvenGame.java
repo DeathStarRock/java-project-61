@@ -1,5 +1,6 @@
 package hexlet.code.games;
 
+import hexlet.code.Engine;
 import hexlet.code.Question;
 import java.util.Random;
 
@@ -15,5 +16,8 @@ public class EvenGame {
         String correct = number % 2 == 0 ? "yes" : "no";
         return new Question(String.valueOf(number), correct);
     }
+
+    public static void start(String userName) {
+        Engine.run(EvenGame.getDescription(), EvenGame::generateQuestion, userName);
+    }
 }
- 

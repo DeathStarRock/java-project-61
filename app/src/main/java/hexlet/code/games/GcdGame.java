@@ -1,5 +1,6 @@
 package hexlet.code.games;
 
+import hexlet.code.Engine;
 import hexlet.code.Question;
 import java.util.Random;
 
@@ -26,5 +27,8 @@ public class GcdGame {
         }
         return a;
     }
+
+    public static void start(String userName) {
+        Engine.run(GcdGame.getDescription(), GcdGame::generateQuestion, userName);
+    }
 }
- 

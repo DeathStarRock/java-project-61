@@ -28,35 +28,32 @@ public class App {
             System.out.print("Your choice: ");
 
             String input = scanner.nextLine().trim();
-            int choice;
+            int userChoise;
             try {
-                choice = Integer.parseInt(input);
+                userChoise = Integer.parseInt(input);
             } catch (NumberFormatException e) {
                 System.out.println("Invalid input. Please enter a number.");
                 continue;
             }
 
-            switch (choice) {
+            switch (userChoise) {
                 case 1:
                     Cli.greet(name);
                     break;
                 case 2:
-                    Engine.run(EvenGame.getDescription(), EvenGame::generateQuestion, name);
+                    EvenGame.start(name);
                     break;
                 case 3:
-                    Engine.run(CalcGame.getDescription(), CalcGame::generateQuestion, name);
+                    CalcGame.start(name);
                     break;
                 case 4:
-                    Engine.run(GcdGame.getDescription(), GcdGame::generateQuestion, name);
+                    GcdGame.start(name);
                     break;
                 case 5:
-                    Engine.run(
-                            ProgressionGame.getDescription(),
-                            ProgressionGame::generateQuestion,
-                            name);
+                    ProgressionGame.start(name);
                     break;
                 case 6:
-                    Engine.run(PrimeGame.getDescription(), PrimeGame::generateQuestion, name);
+                    PrimeGame.start(name);
                     break;
                 case 0:
                     System.out.println("Goodbye, " + name + "!");
@@ -64,9 +61,9 @@ public class App {
                     return;
                 default:
                     System.out.println("Unknown game number. Please try again.");
+                    System.out.println("Unknown user choice" + userChoise);
                     break;
             }
         }
     }
 }
- 
