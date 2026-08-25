@@ -34,7 +34,7 @@ public class CalcGame {
             case '*':
                 return a * b;
             default:
-                throw new IllegalArgumentException("Unknown operator");
+                throw new RuntimeException("Unknown operator " + operator);
         }
     }
 

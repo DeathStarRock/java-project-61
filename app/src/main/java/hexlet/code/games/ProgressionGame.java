@@ -18,10 +18,7 @@ public class ProgressionGame {
         int start = random.nextInt(50) + 1;
         int step = random.nextInt(10) + 1;
 
-        int[] progression = new int[length];
-        for (int i = 0; i < length; i++) {
-            progression[i] = start + i * step;
-        }
+        int[] progression = generateProgression(start, step, length);
 
         int hiddenIndex = random.nextInt(length);
         int hiddenNumber = progression[hiddenIndex];
@@ -43,5 +40,13 @@ public class ProgressionGame {
 
     public static void start(String userName) {
         Engine.run(ProgressionGame.getDescription(), ProgressionGame::generateQuestion, userName);
+    }
+
+    private static int[] generateProgression(int start, int step, int length) {
+        int[] progression = new int[length];
+        for (int i = 0; i < length; i++) {
+            progression[i] = start + i * step;
+        }
+        return progression;
     }
 }
