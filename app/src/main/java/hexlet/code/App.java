@@ -61,7 +61,7 @@ public class App {
                     return;
                 default:
                     System.out.println("Unknown game number. Please try again.");
-                    System.out.println("Unknown user choice" + userChoise);
+                    System.out.println("Unknown user choice " + userChoise);
                     break;
             }
         }
