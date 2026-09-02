@@ -21,7 +21,6 @@ public class ProgressionGame {
         int step = random.nextInt(10) + 1;
 
         int[] progression = generateProgression(start, step, length);
-
         int hiddenIndex = random.nextInt(length);
         int hiddenNumber = progression[hiddenIndex];
 
