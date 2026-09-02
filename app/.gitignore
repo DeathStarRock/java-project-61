@@ -15,3 +15,5 @@ app.iml
 test
 /build/
 /.gradle/
+/build/
+/.gradle/
