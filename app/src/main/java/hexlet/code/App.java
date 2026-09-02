@@ -52,7 +52,6 @@ public class App {
                 break;
             case 0:
                 System.out.println("Goodbye!");
-                scanner.close();
                 return;
             default:
                 System.out.println("Unknown game number. Please try again.");
