@@ -31,6 +31,6 @@ public class PrimeGame {
     }
 
     public static void start() {
-        Engine.run(EvenGame.getDescription(), EvenGame::generateQuestion);
+        Engine.run(ProgressionGame.getDescription(), ProgressionGame::generateQuestion);
     }
 }

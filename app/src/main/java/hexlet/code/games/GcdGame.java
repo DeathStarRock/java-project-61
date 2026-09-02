@@ -29,6 +29,6 @@ public class GcdGame {
     }
 
     public static void start() {
-        Engine.run(EvenGame.getDescription(), EvenGame::generateQuestion);
+        Engine.run(GcdGame.getDescription(), GcdGame::generateQuestion);
     }
 }

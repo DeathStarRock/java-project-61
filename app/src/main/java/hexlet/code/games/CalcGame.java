@@ -39,6 +39,6 @@ public class CalcGame {
     }
 
     public static void start() {
-        Engine.run(EvenGame.getDescription(), EvenGame::generateQuestion);
+        Engine.run(CalcGame.getDescription(), CalcGame::generateQuestion);
     }
 }

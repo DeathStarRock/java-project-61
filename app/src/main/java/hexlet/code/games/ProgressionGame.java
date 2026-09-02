@@ -33,7 +33,7 @@ public class ProgressionGame {
     }
 
     public static void start() {
-        Engine.run(EvenGame.getDescription(), EvenGame::generateQuestion);
+        Engine.run(PrimeGame.getDescription(), PrimeGame::generateQuestion);
     }
 
     private static int[] generateProgression(int start, int step, int length) {
