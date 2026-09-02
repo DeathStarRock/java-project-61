@@ -6,8 +6,12 @@ import java.util.function.Supplier;
 public class Engine {
     public static final int ROUNDS = 3;
 
-    public static void run(String description, Supplier<Question> questionGenerator, String name) {
+    public static void run(String description, Supplier<Question> questionGenerator) {
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Welcome to the Brain Games!");
+        System.out.print("May I have your name? ");
+        String name = scanner.nextLine().trim();
+        System.out.println("Hello, " + name + "!");
         System.out.println(description);
 
         for (int i = 0; i < ROUNDS; i++) {

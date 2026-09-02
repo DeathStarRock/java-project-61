@@ -30,7 +30,7 @@ public class PrimeGame {
         return true;
     }
 
-    public static void start(String userName) {
-        Engine.run(PrimeGame.getDescription(), PrimeGame::generateQuestion, userName);
+    public static void start() {
+        Engine.run(EvenGame.getDescription(), EvenGame::generateQuestion);
     }
 }

@@ -11,11 +11,6 @@ public class App {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Welcome to the Brain Games!");
-        System.out.print("May I have your name? ");
-        String name = scanner.nextLine().trim();
-        System.out.println("Hello, " + name + "!");
-
         while (true) {
             System.out.println("\nPlease enter the game number and press Enter.");
             System.out.println("1 - Greet");
@@ -38,25 +33,25 @@ public class App {
 
             switch (userChoise) {
                 case 1:
-                    Cli.greet(name);
+                    Cli.greet();
                     break;
                 case 2:
-                    EvenGame.start(name);
+                    EvenGame.start();
                     break;
                 case 3:
-                    CalcGame.start(name);
+                    CalcGame.start();
                     break;
                 case 4:
-                    GcdGame.start(name);
+                    GcdGame.start();
                     break;
                 case 5:
-                    ProgressionGame.start(name);
+                    ProgressionGame.start();
                     break;
                 case 6:
-                    PrimeGame.start(name);
+                    PrimeGame.start();
                     break;
                 case 0:
-                    System.out.println("Goodbye, " + name + "!");
+                    System.out.println("Goodbye!");
                     scanner.close();
                     return;
                 default:

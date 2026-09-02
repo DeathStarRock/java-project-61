@@ -38,7 +38,7 @@ public class CalcGame {
         }
     }
 
-    public static void start(String userName) {
-        Engine.run(CalcGame.getDescription(), CalcGame::generateQuestion, userName);
+    public static void start() {
+        Engine.run(EvenGame.getDescription(), EvenGame::generateQuestion);
     }
 }

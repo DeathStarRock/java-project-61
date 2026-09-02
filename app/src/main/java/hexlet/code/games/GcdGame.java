@@ -28,7 +28,7 @@ public class GcdGame {
         return a;
     }
 
-    public static void start(String userName) {
-        Engine.run(GcdGame.getDescription(), GcdGame::generateQuestion, userName);
+    public static void start() {
+        Engine.run(EvenGame.getDescription(), EvenGame::generateQuestion);
     }
 }

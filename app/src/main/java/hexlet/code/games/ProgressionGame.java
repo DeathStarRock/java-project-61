@@ -32,8 +32,8 @@ public class ProgressionGame {
         return new Question(question, String.valueOf(hiddenNumber));
     }
 
-    public static void start(String userName) {
-        Engine.run(ProgressionGame.getDescription(), ProgressionGame::generateQuestion, userName);
+    public static void start() {
+        Engine.run(EvenGame.getDescription(), EvenGame::generateQuestion);
     }
 
     private static int[] generateProgression(int start, int step, int length) {

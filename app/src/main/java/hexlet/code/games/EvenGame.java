@@ -17,7 +17,7 @@ public class EvenGame {
         return new Question(String.valueOf(number), correct);
     }
 
-    public static void start(String userName) {
-        Engine.run(EvenGame.getDescription(), EvenGame::generateQuestion, userName);
+    public static void start() {
+        Engine.run(EvenGame.getDescription(), EvenGame::generateQuestion);
     }
 }
