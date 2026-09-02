@@ -59,5 +59,6 @@ public class App {
                 System.out.println("Unknown user choice " + userChoice);
                 break;
         }
+        scanner.close();
     }
 }
