@@ -45,10 +45,10 @@ public class App {
                 GcdGame.start();
                 break;
             case 5:
-                ProgressionGame.start();
+                PrimeGame.start();
                 break;
             case 6:
-                PrimeGame.start();
+                ProgressionGame.start();
                 break;
             case 0:
                 System.out.println("Goodbye!");
